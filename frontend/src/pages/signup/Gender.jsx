@@ -1,8 +1,8 @@
 import React from "react";
 
-const Gender = () => {
+const Gender = ({ onSelect, selectedGender }) => {
   return (
-    <div className="flex">
+    <div className="flex gap-2">
       <div className="form-control">
         <label className="label cursor-pointer">
           <span className="label-text text-white">Male</span>
@@ -10,7 +10,8 @@ const Gender = () => {
             type="radio"
             name="radio-10"
             className="radio checked:bg-blue-500 border-black ml-1"
-            checked
+            checked={selectedGender === "male"}
+            onChange={() => onSelect("male")}
           />
         </label>
       </div>
@@ -21,7 +22,8 @@ const Gender = () => {
             type="radio"
             name="radio-10"
             className="radio checked:bg-pink-500 border-gray-900 ml-1"
-            checked
+            checked={selectedGender === "female"}
+            onChange={() => onSelect("female")}
           />
         </label>
       </div>
