@@ -12,7 +12,7 @@ const MessageContainer = () => {
   }, [setSelectedPerson]);
 
   return (
-    <div className="w-4/5 flex flex-col border-l border-gray-500">
+    <div className="w-4/5 flex flex-col border-l border-gray-500 min-w-52">
       {!selectedPerson ? (
         <NoChatSelected />
       ) : (
