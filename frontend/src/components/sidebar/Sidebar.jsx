@@ -1,6 +1,6 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
-import Convertations from "./Convertations";
+import Conversations from "./Conversations";
 import Logout from "./Logout";
 
 const Sidebar = () => {
@@ -18,7 +18,7 @@ const Sidebar = () => {
       </form>
 
       <div className="divider px-2"></div>
-      <Convertations />
+      <Conversations />
       <Logout />
     </div>
   );
