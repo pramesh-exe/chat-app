@@ -14,6 +14,11 @@ const useGetConversation = () => {
         if (data.error) {
           throw new Error(data.error);
         }
+        // const sortedConversations = data.sort((a, b) => {
+        //   return new Date(b.createdAt) - new Date(a.createdAt);
+        // });
+        // setConversations(sortedConversations);
+        // console.log(sortedConversations);
         setConversations(data);
       } catch (error) {
         toast.error(error.message);
