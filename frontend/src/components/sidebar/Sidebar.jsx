@@ -1,7 +1,7 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
-import { BiLogOut } from "react-icons/bi";
 import Convertations from "./Convertations";
+import Logout from "./Logout";
 
 const Sidebar = () => {
   return (
@@ -19,9 +19,7 @@ const Sidebar = () => {
 
       <div className="divider px-2"></div>
       <Convertations />
-      <div className="mt-auto">
-        <BiLogOut className="w-6 h-6 text-white cursor-pointer" />
-      </div>
+      <Logout />
     </div>
   );
 };
